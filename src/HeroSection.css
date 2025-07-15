@@ -37,39 +37,48 @@
 }
 
 .hero-left h1 {
-  font-size: 2.8rem;
-  font-weight: 800;
-  margin-bottom: 1.2rem;
+  font-size: 3.6rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
   line-height: 1.1;
   color: #111;
   text-shadow: none;
 }
 
 .hero-left p {
-  font-size: 1.25rem;
-  margin-bottom: 2.2rem;
+  font-size: 1.7rem;
+  margin-bottom: 2.5rem;
   color: #444;
   line-height: 1.6;
 }
 
 .cta-button {
   display: inline-block;
-  background: linear-gradient(90deg, #18391E 0%, #18391E 100%);
+  background: linear-gradient(90deg, #00c853 0%, #18391E 100%);
   color: #fff;
-  font-size: 1.15rem;
-  font-weight: 700;
-  padding: 0.9rem 2.2rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 1.1rem 1.8rem;
   border: none;
-  border-radius: 32px;
-  box-shadow: 0 4px 24px #18391e33;
+  border-radius: 40px;
+  box-shadow: 0 6px 32px #18391e33, 0 2px 8px #00c85344;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: background 0.25s, color 0.2s, box-shadow 0.2s, transform 0.18s;
   outline: none;
+  letter-spacing: 0.5px;
+}
+
+.cta-button:hover, .cta-button:focus {
+  background: linear-gradient(90deg, #18391E 0%, #00c853 100%);
+  color: #fff;
+  box-shadow: 0 12px 40px #18391e44, 0 4px 16px #00c85355;
+  transform: scale(1.06);
 }
 
 .cta-button:active {
   background: #18391E;
+  color: #fff;
 }
 
 .hero-right {
@@ -91,7 +100,7 @@
   .hero-left {
     max-width: 100%;
     padding-right: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0.7rem;
   }
   .hero-right {
     min-width: 0;
@@ -111,9 +120,13 @@
   }
   .hero-left p {
     font-size: 1rem;
+    margin-bottom: 1.1rem;
   }
   .cta-button {
     font-size: 1rem;
     padding: 0.7rem 1.5rem;
+  }
+  .hero-left {
+    margin-bottom: 0.5rem;
   }
 } 

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaSearch, FaMapMarkerAlt, FaBullhorn } from "react-icons/fa";
 import "./ServicesSection.css";
+import audit from './audit.png';
 
 const services = [
   {
@@ -39,10 +40,36 @@ const ServicesSection = () => (
             </div>
           </div>
         ))}
+        <a
+          href="https://calendly.com/harmatia/30min"
+          className="see-what-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: 'inline-block',
+            marginTop: '2rem',
+            background: 'linear-gradient(90deg, #00c853 0%, #18391E 100%)',
+            color: '#fff',
+            fontSize: '1.1rem',
+            fontWeight: 700,
+            padding: '0.9rem 2.2rem',
+            border: 'none',
+            borderRadius: '32px',
+            boxShadow: '0 4px 24px #18391e33',
+            cursor: 'pointer',
+            textDecoration: 'none',
+            transition: 'background 0.2s, color 0.2s, box-shadow 0.2s',
+            outline: 'none',
+            letterSpacing: '0.5px',
+            textAlign: 'center',
+          }}
+        >
+          See what we can do for you
+        </a>
       </div>
       <div className="services-image-col">
         <img
-          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+          src={audit}
           alt="Local SEO Services"
           className="services-image"
         />

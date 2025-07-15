@@ -43,7 +43,8 @@
   gap: 2.5rem;
   margin-top: 2.5rem;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .about-stat {
@@ -91,14 +92,15 @@
     font-size: 1.5rem;
   }
   .about-stats-row {
-    gap: 1rem;
+    gap: 0.5rem;
     margin-top: 1.2rem;
+    overflow-x: auto;
   }
   .about-stat {
-    min-width: 100px;
-    padding: 0.7rem 1rem;
+    min-width: 90px;
+    padding: 0.5rem 0.5rem;
   }
   .about-stat-value {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 } 

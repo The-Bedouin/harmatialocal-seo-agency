@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import './Footer.css';
+import hlsalogo from '../../hlsalogo.png';
 
 const AGENCY_EMAIL = 'services@harmatialocalseoagency.com';
 const CALENDLY_LINK = 'https://calendly.com/harmatia/30min';
@@ -38,32 +39,37 @@ export default function Footer() {
       transition={{ duration: 0.7, ease: 'easeOut' }}
     >
       <div className="footer-main-grid">
-        {/* Left: Navigation */}
-        <div className="footer-col footer-nav">
-          <h3>Sections</h3>
-          <ul>
-            {sectionLinks.map(link => (
-              <li key={link.label}>
-                <a href={link.href}>{link.label}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        {/* Center: Actions */}
-        <div className="footer-col footer-actions">
-          <h3>Quick Actions</h3>
-          <div className="footer-actions-btns">
-            {actionLinks.map(link => (
-              <a
-                key={link.label}
-                href={link.href}
-                target={link.external ? '_blank' : undefined}
-                rel={link.external ? 'noopener noreferrer' : undefined}
-                className="footer-action-btn"
-              >
-                {link.label}
-              </a>
-            ))}
+        <div className="footer-row-wrap">
+          {/* Left: Navigation */}
+          <div className="footer-col footer-nav">
+            <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
+              <img src={hlsalogo} alt="Harmatia Local SEO Agency Logo" style={{ height: '36px', marginRight: '10px' }} />
+              <h3 style={{ margin: 0 }}>Sections</h3>
+            </div>
+            <ul>
+              {sectionLinks.map(link => (
+                <li key={link.label}>
+                  <a href={link.href}>{link.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* Center: Actions */}
+          <div className="footer-col footer-actions">
+            <h3>Quick Actions</h3>
+            <div className="footer-actions-btns">
+              {actionLinks.map(link => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.external ? '_blank' : undefined}
+                  rel={link.external ? 'noopener noreferrer' : undefined}
+                  className="footer-action-btn"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
         {/* Right: Contact & Socials */}
@@ -83,12 +89,13 @@ export default function Footer() {
       <div className="footer-bottom-row">
         <div className="footer-legal">
           <a href="#privacy">Privacy Policy</a>
-          <span className="footer-dot">•</span>
+          <span className="footer-dot">&bull;</span>
           <a href="#terms">Terms of Service</a>
-          <span className="footer-dot">•</span>
-          <a href="#">Sitemap</a>
+          <span className="footer-dot">&bull;</span>
+          <a href="/sitemap">Sitemap</a>
         </div>
         <div className="footer-copyright">
+          <img src={hlsalogo} alt="Harmatia Local SEO Agency Logo" style={{ height: '32px', verticalAlign: 'middle', marginRight: '8px' }} />
           &copy; {new Date().getFullYear()} Harmatia Local SEO Agency. All rights reserved.
         </div>
       </div>

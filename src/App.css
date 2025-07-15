@@ -1,5 +1,46 @@
-.App {
-  text-align: center;
+body, .App {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat-thin {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+.montserrat-extralight {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+.montserrat-light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.montserrat-regular {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.montserrat-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.montserrat-semibold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.montserrat-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.montserrat-extrabold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+.montserrat-black {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+.montserrat-italic {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
 }
 
 .App-logo {

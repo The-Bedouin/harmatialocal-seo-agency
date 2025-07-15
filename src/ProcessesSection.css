@@ -140,6 +140,14 @@
     min-height: 320px;
     padding: 1.5rem 0.7rem;
   }
+  .process-card-icon {
+    position: static;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+    right: auto;
+    bottom: auto;
+    align-self: flex-start;
+  }
 }
 
 @media (max-width: 600px) {

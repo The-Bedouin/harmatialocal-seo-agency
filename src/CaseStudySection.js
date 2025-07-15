@@ -1,30 +1,34 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./components/ui/3d-card";
 import "./CaseStudySection.css";
+import ccbmaprank from "./ccbmaprank.png";
+import ccblocalcalls from "./ccblocalcalls.png";
+import ccbtargetedwebtraffic from "./ccbtargetedwebtraffic.png";
+import ccbwebcompettitoranalysis from "./ccbwebcompettitoranalysis.png";
 
 const caseStudies = [
   {
     title: "Local Rank",
     desc: "See how we improved local search rankings.",
-    img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    img: ccbmaprank,
     oneLiner: "Boosted to top 3 in Google Maps results."
   },
   {
     title: "Local Calls to Location",
     desc: "Increased direct calls from search.",
-    img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+    img: ccblocalcalls,
     oneLiner: "Doubled monthly call volume."
   },
   {
     title: "Targeted Web Traffic",
     desc: "Drove more relevant visitors to site.",
-    img: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    img: ccbtargetedwebtraffic,
     oneLiner: "+120% increase in local traffic."
   },
   {
     title: "Website Competitor Analysis",
     desc: "Identified and outperformed competitors.",
-    img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+    img: ccbwebcompettitoranalysis,
     oneLiner: "Surpassed 5 top competitors."
   }
 ];
