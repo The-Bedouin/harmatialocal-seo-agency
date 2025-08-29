@@ -1,16 +1,13 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
+import Counter from './Counter';
 
 const stats = [
   { value: 3, label: "Average Profit Growth", places: [1], suffix: "x" },
   { value: 3, label: "Clients Ranking #1 Locally", places: [1], suffix: "" },
   { value: 100, label: "Location-Based Business Focus", places: [100, 10, 1], suffix: "%" }
 ];
-
-function Counter({ value, fontSize = 48 }) {
-  return <span className="about-stat-value" style={{ fontSize }}>{value}</span>;
-}
 
 export default function AboutSection() {
   const [startCount, setStartCount] = useState(false);
@@ -31,7 +28,12 @@ export default function AboutSection() {
         <div className="about-stats-row">
           {stats.map((stat, idx) => (
             <div className="about-stat" key={idx}>
-              <Counter value={startCount ? stat.value : 0} />
+              <Counter 
+                value={startCount ? stat.value : 0} 
+                fontSize={48}
+                places={stat.places}
+                textColor="white"
+              />
               <span className="about-stat-suffix">{stat.suffix}</span>
               <span className="about-stat-label">{stat.label}</span>
             </div>

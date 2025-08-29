@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import CardSwap, { Card } from './CardSwap';
+import TrueFocus from './TrueFocus';
 import '@/app/globals.css';
 
 export default function HeroSection() {
@@ -10,7 +11,14 @@ export default function HeroSection() {
       <div className="hero-left">
         <h1>
           Grow Your Business with 
-          <span style={{ color: 'transparent', background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', backgroundClip: 'text' }}>Local SEO</span>
+          <TrueFocus 
+            sentence="Local SEO"
+            manualMode={false}
+            blurAmount={3}
+            borderColor="#2563EB"
+            animationDuration={3}
+            pauseBetweenAnimations={1}
+          />
         </h1>
         <p>
           We help local businesses dominate search results and attract more customers with proven SEO strategies tailored for your area.

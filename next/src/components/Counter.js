@@ -1,6 +1,6 @@
+"use client";
 import { MotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { useEffect } from "react";
-import "./Counter.css";
 
 function Number({ mv, number, height }) {
   let y = useTransform(mv, (latest) => {
@@ -103,4 +103,4 @@ export default function Counter({
       </div>
     </div>
   );
-} 
+}
